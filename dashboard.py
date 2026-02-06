@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestClassifier
 st.title("Smart City Cotonou : Prédiction de congestion routière")
 st.markdown("Visualisation interactive de la congestion selon l'heure et la météo")
 
-df = pd.read_csv("C:/Users/eaho/Documents/Pratices/dataset_congestion_cotonou.csv")
+df = pd.read_csv("dataset_congestion_cotonou.csv")
 
 niveau_map = {"Faible": 0, "Moyen": 1, "Élevé": 2}
 df["niveau_congestion_num"] = df["niveau_congestion"].map(niveau_map)
